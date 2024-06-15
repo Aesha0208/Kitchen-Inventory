@@ -1,0 +1,20 @@
+<html>
+    {% extends 'base.html' %} 
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Kitchen Inventory {% endblock %}</title>
+</head>
+
+<body>
+    {% block pagecontent %}
+  <center>  <h1>Kitchen Inventory.</h1> </center>
+  <ul>
+    <a href="{%url 'addInv'%}"> <li>Add Inventory</li>  </a>
+    <a href="{%url 'updateInvList'%}"> <li>Update Inventory</li> </a>
+    <a href="{%url 'CreateInv'%}"> <li>Create Monthly List</li> </a>
+  </ul>
+    {% endblock %}
+
+</body>
+
+</html>

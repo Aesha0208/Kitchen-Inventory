@@ -1,0 +1,87 @@
+<html>
+    {% extends 'base.html' %} 
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}About Us {% endblock %}</title>
+    <style >
+        .image-container {
+            position: relative;
+        }
+        
+        .service-description {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+            padding: 50px;
+            margin-top:-690px;
+            width: 100%;
+        }
+        
+        .service-description h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .service-description p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        body{
+            background-color: rgb(11, 24, 24);
+        }
+    </style>
+</head>
+
+<body>
+
+    {% block pagecontent %}
+
+    <div class="cont">
+        <div class="image-container">
+            <div class="service-description">
+        <center>
+        <h1>About Us</h1> 
+        <hr>
+        Welcome to the Kitchen Inventory, where we're passionate about simplifying the lives of homemakers with inventive solutions. 
+        <br>
+        Our journey began with a simple yet profound idea: to redefine the way households organize their culinary spaces.  
+        <br>
+        At the Kitchen Inventory, we're driven by a commitment to delivering exceptional service and unwavering support. 
+        Your satisfaction is our paramount concern, and we're steadfast in our dedication to assisting you along your kitchen management journey.
+        </center>
+            </div>
+        </div>
+    </div> 
+
+    <div  style='margin-top: 20px;'class="div2">
+        <div style="background-color: PapayaWhip;"> 
+        <img class="img3" src="{% static 'image/myImg.jpg' %}" alt="image">
+        <div style="height:428px" class="content">
+            <h1 style="color:DarkMagenta;padding-top: 20px;">Portfolio</h1>
+            <p style="color:RebeccaPurple">
+            Welcome to my corner of the digital world! I'm Aesha Patel, a passionate Python/Django developer with a relentless work ethic and a "never give up" attitude.
+            </p>
+            <p style="color:RebeccaPurple">
+               What sets me apart is my unwavering determination and resilience. I thrive in challenging environments, tackling obstacles head-on and refusing to back down until I've found a solution. Failure is not an option for me – it's simply an opportunity to learn and grow.
+            </p>
+            <p style="color:RebeccaPurple">
+                One of my greatest strengths is my ability to learn quickly. Whether it's mastering a new framework or diving into unfamiliar codebases, I have a knack for picking up new concepts and applying them effectively. I'm not afraid to venture outside of my comfort zone, because I know that's where true innovation lies.
+            </p>
+            <p style="color:RebeccaPurple">So if you're looking for a Python/Django developer who's as hardworking as they come, who never gives up in the face of adversity, and who's always eager to learn and grow.</p>
+        </div>
+    </div>
+    </div>
+    
+
+
+
+    {% endblock %}
+
+</body>
+
+</html>

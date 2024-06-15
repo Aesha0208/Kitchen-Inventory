@@ -1,0 +1,63 @@
+<html>
+    {% extends 'base.html' %} 
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+
+    <title>{% block title %} Contact Us {% endblock %}</title>
+    <style>
+
+        .contact-text {
+            font: 300 18px 'Lato', sans-serif;
+            letter-spacing: 1.9px;
+            color: black;
+        }
+        .copyright {
+            font: 200 14px 'Oswald', sans-serif;
+            color: white;
+            letter-spacing: 1px;
+        }
+        
+    </style>
+</head>
+
+<body>
+  
+    {% block pagecontent %}
+ 
+    <div class="cont">
+        <div class="image-container">
+            <div class="service-description">
+        
+        <h1>Contact Us</h1> 
+
+        <div class="direct-contact-container">
+            <ul class="contact-list">
+                <li class="list-item">
+                    <i class="fa fa-map-marker fa-1x"></i>
+                    <span class="contact-text">Vadodara, Gujarat</span>
+                </li><br>
+                <li class="list-item">
+                    <i class="fa fa-phone fa-1x"></i>
+                    <span class="contact-text"><a style="margin-left:3px;" href="tel:1-212-555-5555" title="Give me a call">+91 9737986399</a></span>
+                </li><br>
+                <li class="list-item">
+                    <i class="fa fa-envelope fa-1x"></i>
+                    <span class="contact-text"><a style="margin-left:3px;" href="mailto:#" title="Send me an email">aeshapatel282@gmail.com</a></span>
+                </li>
+            </ul>
+            <hr>
+            <ul class="social-media-list">
+                <li><a href="https://www.linkedin.com/jobs/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <hr>
+            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        </div>        
+            </div>
+        </div>
+    </div> 
+
+    {% endblock %}
+
+</body>
+</html>
